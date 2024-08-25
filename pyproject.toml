@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "replicann"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include="replicann", from="src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+torch = "^2.4.0"
+ipykernel = "^6.29.5"
+numpy = "^2.1.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
